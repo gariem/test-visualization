@@ -20,7 +20,7 @@ ADD COLUMN THE_GEOM GEOMETRY(POINT,4326);
 
 UPDATE VOLCANO_ERUPTION
 SET THE_GEOM = ST_SetSRID(
-	ST_MakePoint(Latitude,Longitude), 4326
+	ST_MakePoint(Longitude,Latitude), 4326
 );
 
 ALTER TABLE TSUNAMI_EVENT
@@ -28,12 +28,11 @@ ADD COLUMN THE_GEOM GEOMETRY(POINT,4326);
 
 UPDATE TSUNAMI_EVENT
 SET THE_GEOM = ST_SetSRID(
-	ST_MakePoint(Latitude,Longitude), 4326
+	ST_MakePoint(Longitude,Latitude), 4326
 );
 
 --SELECT * from TSUNAMI_EVENT;
 --SELECT * from VOLCANO_ERUPTION;
+--SELECT * FROM WORLD;
 
-
-
-
+select * from tsunami_event
