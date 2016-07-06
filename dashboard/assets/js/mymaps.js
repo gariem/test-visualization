@@ -1,11 +1,11 @@
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 11,
+    zoom: 6,
     center: {lat: 41.876, lng: -87.624}
   });
 
   var ctaLayer = new google.maps.KmlLayer({
-    url: 'http://googlemaps.github.io/js-v2-samples/ggeoxml/cta.kml',
+    url: 'https://raw.githubusercontent.com/raphsoft/test-visualization/master/kml/volcano_eruption.kml',
     map: map
   });
 }
