@@ -5,7 +5,12 @@ function initMap() {
   });
 
   var ctaLayer = new google.maps.KmlLayer({
-    url: 'https://raw.githubusercontent.com/raphsoft/test-visualization/master/kml/volcano_eruption.kml',
+    url: 'https://raw.githubusercontent.com/raphsoft/test-visualization/master/kml/volcano_resumen.kml',
+    map: map
+  });
+
+  var ctaLayer = new google.maps.KmlLayer({
+    url: 'https://raw.githubusercontent.com/raphsoft/test-visualization/master/kml/tsunami_tragic_resume.kml',
     map: map
   });
 }

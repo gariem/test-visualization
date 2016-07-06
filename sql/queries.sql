@@ -35,4 +35,6 @@ SET THE_GEOM = ST_SetSRID(
 --SELECT * from VOLCANO_ERUPTION;
 --SELECT * FROM WORLD;
 
-select * from tsunami_event
+
+SELECT ID,ST_Buffer(ST_MakePoint(Longitude,Latitude)::geography, 160000) AS GEO,LOCATION || ', ' || COUNTRY AS LOCATION, DEATHS INTO VOLCANO_RESUMEN FROM VOLCANO_ERUPTION;
+
