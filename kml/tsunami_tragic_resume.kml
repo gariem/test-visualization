@@ -5,6 +5,14 @@
             <SimpleField type="string" name="location"/>
             <SimpleField type="int" name="deaths"/>
         </Schema>
+		<Style id="redLineBluePoly">
+		  <LineStyle>
+			<color>ff0000ff</color>
+		  </LineStyle>
+		  <PolyStyle>
+			<color>ffff0000</color>
+		  </PolyStyle>
+		</Style>
         <Folder>
             <name>tsunami_tragic_resume</name>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e87">
@@ -22,7 +30,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e86">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -38,7 +46,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e85">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -54,7 +62,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e84">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -70,7 +78,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e83">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -86,7 +94,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e82">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -102,7 +110,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e81">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -118,7 +126,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e80">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -134,7 +142,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e7f">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -142,7 +150,7 @@
                         <SimpleData name="deaths">3700</SimpleData>
                     </SchemaData>
                 </ExtendedData>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e7e">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -158,7 +166,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e7d">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -174,7 +182,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e7c">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -190,7 +198,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e7b">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -206,7 +214,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e7a">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -222,7 +230,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e79">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -238,7 +246,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e78">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -254,7 +262,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e77">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -270,7 +278,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e76">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -286,7 +294,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e75">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -302,7 +310,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e74">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -318,7 +326,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e73">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -334,7 +342,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e72">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -350,7 +358,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e71">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -358,7 +366,7 @@
                         <SimpleData name="deaths">2450</SimpleData>
                     </SchemaData>
                 </ExtendedData>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e70">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -374,7 +382,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e6f">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -390,7 +398,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e6e">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -406,7 +414,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e6d">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -422,7 +430,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e6c">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -438,7 +446,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e6b">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -454,7 +462,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e6a">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -462,7 +470,7 @@
                         <SimpleData name="deaths">300000</SimpleData>
                     </SchemaData>
                 </ExtendedData>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e69">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -478,7 +486,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e68">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -494,7 +502,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e67">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -510,7 +518,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e66">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -526,7 +534,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e65">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -542,7 +550,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e64">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -558,7 +566,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e63">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -574,7 +582,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e62">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -582,7 +590,7 @@
                         <SimpleData name="deaths">300</SimpleData>
                     </SchemaData>
                 </ExtendedData>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e61">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -598,7 +606,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e60">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -614,7 +622,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e5f">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -630,7 +638,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e5e">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -646,7 +654,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e5d">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -662,7 +670,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e5c">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -678,7 +686,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e5b">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -694,7 +702,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e5a">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -710,7 +718,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e59">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -718,7 +726,7 @@
                         <SimpleData name="deaths">335</SimpleData>
                     </SchemaData>
                 </ExtendedData>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e58">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -734,7 +742,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e57">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -750,7 +758,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
             <Placemark id="tsunami_tragic_resume.fid-5ac64b09_155bd9ebf9f_-7e56">
                 <ExtendedData>
                     <SchemaData schemaUrl="#tsunami_tragic_resume_1">
@@ -766,7 +774,7 @@
                         </LinearRing>
                     </outerBoundaryIs>
                 </Polygon>
-            </Placemark>
+            <styleUrl>#redLineBluePoly</styleUrl></Placemark>
         </Folder>
     </Document>
 </kml>
