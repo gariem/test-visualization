@@ -10,7 +10,7 @@ function initMap() {
   });
 
   var ctaLayer = new google.maps.KmlLayer({
-    url: 'https://raw.githubusercontent.com/raphsoft/test-visualization/master/kml/tsunami_tragic_resume_raw.kml',
+    url: 'https://raw.githubusercontent.com/raphsoft/test-visualization/7d60b4806287444e604888499fdc033117a57a5b/kml/tsunami_tragic_resume.kml',
     map: map
   });
 }

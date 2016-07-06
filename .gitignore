@@ -1,0 +1,7 @@
+viewer/.idea/
+viewer/.gradle/
+viewer/build/
+viewer/*.iml
+viewer/*.ipr
+viewer/*.iws
+viewer/classes/
