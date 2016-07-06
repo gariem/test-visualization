@@ -1,11 +1,11 @@
 function initAll(){
 
     $.ajax({
-        url:"/data/perdidas",
+        url:"/data/test",
         success:function(data) {
             var xy_chart = d3_xy_chart()
                 .width(600)
-                .height(200)
+                .height(250)
                 .xlabel("Year")
                 .ylabel("Million $") ;
 
@@ -60,8 +60,12 @@ function d3_xy_chart() {
                 .domain([ d3.min(datasets, function(d) { return d3.min(d.y); }),
                     d3.max(datasets, function(d) { return d3.max(d.y); }) ]) ;
 
-            var color_scale = d3.scale.category10()
-                .domain(d3.range(datasets.length)) ;
+            // var color_scale = d3.scale.category10()
+            //     .domain(d3.range(datasets.length)) ;
+
+            var color_scale = d3.scale.ordinal()
+                .domain(["Tsunami", "Volcano"])
+                .range(["#ff0000", "#0000ff"]);
 
             var x_axis = d3.svg.axis()
                 .scale(x_scale)
@@ -69,6 +73,7 @@ function d3_xy_chart() {
 
             var y_axis = d3.svg.axis()
                 .scale(y_scale)
+                .tickFormat(d3.format("s"))
                 .orient("left") ;
 
             var x_grid = d3.svg.axis()

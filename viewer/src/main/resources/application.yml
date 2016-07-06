@@ -6,9 +6,8 @@ management:
 
 spring:
   application:
-    name: cellnet
+    name: dataview
   datasource:
-    url: jdbc:oracle:thin:@esppdtd1scan.vzbi.com:1800/CMFEBDEV
+    url: jdbc:postgresql://localhost:5432/volcanos
     username: postgres
     password: dcgmplc
-#    driver-class-name: oracle.jdbc.OracleDriver

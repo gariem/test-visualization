@@ -5,3 +5,4 @@ viewer/*.iml
 viewer/*.ipr
 viewer/*.iws
 viewer/classes/
+viewer/out/
