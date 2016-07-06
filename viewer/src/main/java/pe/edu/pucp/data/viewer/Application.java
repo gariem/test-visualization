@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Created by Emilio on 7/6/2016.
  */
 @SpringBootApplication
+//@MapperScan(basePackages = "pe.edu.pucp.data.viewer.mapper")
 public class Application {
 
     public static void main(String[] args) {

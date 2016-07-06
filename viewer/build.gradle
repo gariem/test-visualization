@@ -25,6 +25,8 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.projectlombok:lombok:1.12.6")
     compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.0.0")
+    compile("org.postgresql:postgresql:9.4.1208.jre7")
 }
 
 task wrapper(type: Wrapper) {
