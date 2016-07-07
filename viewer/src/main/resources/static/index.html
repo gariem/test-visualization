@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Volcano vs Tsunami Data Visualization</title>
+  <title>Volcano and Tsunami Data Visualization</title>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
   <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/keen-dashboards.css" />
@@ -11,12 +11,8 @@
 
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-        </button>
-      </div>
-      <div class="navbar-collapse collapse">
+      <div class="navbar-collapse collapse" style="padding-top: 15px; align-content: center">
+          <p style="color: silver; font-weight: bold; text-align: center;">Volcano and Tsunami Events</p>
       </div>
     </div>
   </div>
@@ -27,7 +23,7 @@
       <div class="col-sm-8">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Volcano and Tsunami Occurences:
+            Localization: Volcano Eruption = <img src="assets/img/volcano.png"> Tsunami = <img src="assets/img/tsunami.png">
           </div>
           <div class="chart-stage">
             <div id="map"></div>
@@ -41,17 +37,17 @@
       </div>
 
       <div class="col-sm-4">
-        <div class="chart-wrapper">
-          <div class="chart-title">
-            Annual Lost in Million Dollars (Since 1970)
+          <div class="chart-wrapper">
+              <div class="chart-title">
+                  Top Affected Countries
+              </div>
+              <div class="chart-stage">
+                  <svg class="chart" id="chart-top-countries"></svg>
+              </div>
+              <div class="chart-notes">
+                  Japan, USA and Indonesia have the highest number of Tsunami events.
+              </div>
           </div>
-          <div class="chart-stage">
-            <div id="chart-perdidas"></div>
-          </div>
-          <div class="chart-notes">
-              Source: <a href="https://www.ngdc.noaa.gov">NOAA</a>
-          </div>
-        </div>
       </div>
 
     </div>
@@ -60,15 +56,45 @@
     <div class="row">
 
       <div class="col-sm-4">
+          <div class="chart-wrapper">
+              <div class="chart-title">
+                  Annual Lost in Million Dollars (Since 1970)
+              </div>
+              <div class="chart-stage">
+                  <div id="chart-perdidas"></div>
+              </div>
+              <div class="chart-notes">
+                  Tsunamis cause much more economic lost than volcano eruptions. Source: <a href="https://www.ngdc.noaa.gov">NOAA</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-sm-4">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Impressions by advertiser
+            Developed Countries not Affected by Tsunamis
           </div>
           <div class="chart-stage">
-            <div id="chart-03"></div>
+            <div id="chart-developed">
+                <br/>
+                <ul>
+                    <li>UNITED KINGDOM</li>
+                    <li>SAUDI ARABIA</li>
+                    <li>NETHERLANDS</li>
+                    <li>SLOVENIA</li>
+                    <li>ROMANIA</li>
+                    <li>FINLAND</li>
+                    <li>CZECH REP.</li>
+                    <li>AUSTRIA</li>
+                    <li>POLAND</li>
+                    <li>SLOVAKIA</li>
+                </ul>
+                <br/>
+                <br/>
+            </div>
           </div>
           <div class="chart-notes">
-            Notes go down here
+
           </div>
         </div>
       </div>
@@ -76,27 +102,29 @@
       <div class="col-sm-4">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Impressions by device
+            Not Developed Countries Affected by Tsunamis
           </div>
           <div class="chart-stage">
-            <div id="chart-04"></div>
+            <div id="chart-nondev">
+                <br/>
+                <ul>
+                    <li>NEPAL</li>
+                    <li>VANUATU</li>
+                    <li>BANGLADESH</li>
+                    <li>ERITREA</li>
+                    <li>HAITI</li>
+                    <li>TOGO</li>
+                </ul>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            </div>
           </div>
           <div class="chart-notes">
-            Notes go down here
-          </div>
-        </div>
-      </div>
 
-      <div class="col-sm-4">
-        <div class="chart-wrapper">
-          <div class="chart-title">
-            Impressions by country
-          </div>
-          <div class="chart-stage">
-            <div id="chart-05"></div>
-          </div>
-          <div class="chart-notes">
-            Notes go down here
           </div>
         </div>
       </div>

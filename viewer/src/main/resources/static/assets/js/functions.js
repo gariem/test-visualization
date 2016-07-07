@@ -1,7 +1,7 @@
 function initAll(){
 
     $.ajax({
-        url:"/data/test",
+        url:"/data/lost",
         success:function(data) {
             var xy_chart = d3_xy_chart()
                 .width(600)
@@ -12,6 +12,13 @@ function initAll(){
             var svg = d3.select("#chart-perdidas").append("svg")
                 .datum(data)
                 .call(xy_chart) ;
+        }
+    });
+
+    $.ajax({
+        url:"/data/ranking",
+        success:function(data) {
+            grouped_bar_chart(data);
         }
     });
 
@@ -43,9 +50,7 @@ function d3_xy_chart() {
 
     function chart(selection) {
         selection.each(function(datasets) {
-            //
-            // Create the plot.
-            //
+            
             var margin = {top: 20, right: 80, bottom: 30, left: 50},
                 innerwidth = width - margin.left - margin.right,
                 innerheight = height - margin.top - margin.bottom ;
@@ -59,9 +64,6 @@ function d3_xy_chart() {
                 .range([innerheight, 0])
                 .domain([ d3.min(datasets, function(d) { return d3.min(d.y); }),
                     d3.max(datasets, function(d) { return d3.max(d.y); }) ]) ;
-
-            // var color_scale = d3.scale.category10()
-            //     .domain(d3.range(datasets.length)) ;
 
             var color_scale = d3.scale.ordinal()
                 .domain(["Tsunami", "Volcano"])
@@ -176,4 +178,116 @@ function d3_xy_chart() {
     } ;
 
     return chart;
+}
+
+function grouped_bar_chart(result){
+
+    var data = result;
+
+    var chartWidth       = 300,
+        barHeight        = 15,
+        groupHeight      = barHeight * data.series.length,
+        gapBetweenGroups = 9.5,
+        spaceForLabels   = 150,
+        spaceForLegend   = 150;
+
+// Zip the series data together (first values, second values, etc.)
+    var zippedData = [];
+    for (var i=0; i<data.labels.length; i++) {
+        for (var j=0; j<data.series.length; j++) {
+            zippedData.push(data.series[j].values[i]);
+        }
+    }
+
+// Color scale
+    var color = d3.scale.category20();
+    var chartHeight = barHeight * zippedData.length + gapBetweenGroups * data.labels.length;
+
+    var x = d3.scale.pow()
+        .domain([0, d3.max(zippedData)])
+        .range([0, chartWidth])
+        .exponent(.3);
+
+    var y = d3.scale.linear()
+        .range([chartHeight + gapBetweenGroups, 0]);
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .tickFormat('')
+        .tickSize(0)
+        .orient("left");
+
+// Specify the chart area and dimensions
+    var chart = d3.select("#chart-top-countries")
+        .attr("width", spaceForLabels + chartWidth + spaceForLegend)
+        .attr("height", chartHeight);
+
+// Create bars
+    var bar = chart.selectAll("g")
+        .data(zippedData)
+        .enter().append("g")
+        .attr("transform", function(d, i) {
+            return "translate(" + spaceForLabels + "," + (i * barHeight + gapBetweenGroups * (0.5 + Math.floor(i/data.series.length) )) + ")";
+        });
+
+// Create rectangles of the correct width
+    bar.append("rect")
+        .attr("fill", function(d,i) { return color(i % data.series.length); })
+        .attr("class", "bar")
+        .attr("width", x)
+        .attr("height", barHeight - 1);
+
+// Add text label in bar
+    bar.append("text")
+        .attr("x", function(d) { return x(d) - 3; })
+        .attr("y", barHeight / 2)
+        .attr("fill", "red")
+        .attr("dy", ".35em")
+        .text(function(d) { return d; });
+
+// Draw labels
+    bar.append("text")
+        .attr("class", "label")
+        .attr("x", function(d) { return - 10; })
+        .attr("y", groupHeight / 2)
+        .attr("dy", ".35em")
+        .text(function(d,i) {
+            if (i % data.series.length === 0)
+                return data.labels[Math.floor(i/data.series.length)];
+            else
+                return ""});
+
+    chart.append("g")
+        .attr("class", "y axis")
+        .attr("transform", "translate(" + spaceForLabels + ", " + -gapBetweenGroups/2 + ")")
+        .call(yAxis);
+
+// Draw legend
+    var legendRectSize = 18,
+        legendSpacing  = 4;
+
+    var legend = chart.selectAll('.legend')
+        .data(data.series)
+        .enter()
+        .append('g')
+        .attr('transform', function (d, i) {
+            var height = legendRectSize + legendSpacing;
+            var offset = -gapBetweenGroups/2;
+            var horz = spaceForLabels + chartWidth + 40 - legendRectSize;
+            var vert = i * height - offset;
+            return 'translate(' + horz + ',' + vert + ')';
+        });
+
+    legend.append('rect')
+        .attr('width', legendRectSize)
+        .attr('height', legendRectSize)
+        .style('fill', function (d, i) { return color(i); })
+        .style('stroke', function (d, i) { return color(i); });
+
+    legend.append('text')
+        .attr('class', 'legend')
+        .attr('x', legendRectSize + legendSpacing)
+        .attr('y', legendRectSize - legendSpacing)
+        .text(function (d) { return d.label; });
+
 }
